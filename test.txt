@@ -1,0 +1,9 @@
+[
+{
+	"name": "open-ai-connection",
+	"type": "open_ai",
+    "api_key": "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",
+    "api_type": "open_ai",
+    "api_version": "2023-07-01"
+}
+]
