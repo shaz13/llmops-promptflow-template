@@ -37,7 +37,9 @@ jobs:
       env_name: ${{ inputs.env_name || 'dev'}}
       flow_type: ${{ inputs.flow_type || 'web_classification' }}
       deployment_type: ${{ inputs.deployment_type|| 'aml' }}
+      creds: $CREDENTIALS
     secrets:
       azure_credentials: ${{ secrets.AZURE_CREDENTIALS }}
       connection_details: ${{ secrets.COMMON_DEV_CONNECTIONS }}
       registry_details: ${{ secrets.DOCKER_IMAGE_REGISTRY }}
+      CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
